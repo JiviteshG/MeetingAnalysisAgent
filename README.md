@@ -8,7 +8,7 @@ This project implements a multi-agent autonomous system using **CrewAI** to auto
 
 The following diagram illustrates the workflow, task dependencies, and tool integration within the crew:
 
-![Meeting Prep Crew Architecture](https://googleusercontent.com/image_generation_content/0)
+<img width="1387" height="768" alt="MeetingAnalysisAgent architechture" src="https://github.com/user-attachments/assets/60c5adff-3602-46a0-83a1-b91bf98c54ae" />
 
 ---
 
@@ -50,3 +50,23 @@ The crew is equipped with the **Exa Toolset** for advanced semantic search capab
 ### 1. Installation
 ```bash
 pip install crewai exa_py
+```
+
+### 2. Configuration
+Ensure you have your environment variables set for your LLM and search provider:
+
+```bash
+OPENAI_API_KEY=your_key_here
+EXA_API_KEY=your_key_here
+```
+
+## 📄 Output
+The final product is a Brief for the Meeting, which includes:
+
+Executive summaries of all participants.
+
+* Key industry talking points.
+
+* Recommended strategic approach.
+
+* Logistical reminders and goal alignment.
